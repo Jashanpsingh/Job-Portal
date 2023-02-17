@@ -23,7 +23,7 @@ app.use(bodyParser.json());
 app.use(bodyParser.urlencoded({ extended: true }));
 
 // Connection to MongoDB
-mongoose.connect('mongodb+srv://admin:admin@cluster0.ifrp4ca.mongodb.net/?retryWrites=true&w=majority', { useNewUrlParser: true, useUnifiedTopology: true });
+mongoose.connect('mongodb url ', { useNewUrlParser: true, useUnifiedTopology: true });
 const connection = mongoose.connection;
 connection.once('open', function() {
     console.log("MongoDB database connection established successfully !");
